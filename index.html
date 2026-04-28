@@ -2,93 +2,137 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My First Website</title>
+  <title>Godstime Portfolio</title>
 
   <style>
-    .project {
-  background-color: #1e293b;
-  padding: 15px;
-  margin: 20px auto;
-  width: 300px;
-  border-radius: 10px;
-}
-    ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background-color: #1e293b;
-  margin: 10px auto;
-  padding: 10px;
-  width: 200px;
-  border-radius: 6px;
-}
     body {
-      background-color: #0f172a;
-      color: white;
+      margin: 0;
+      background: linear-gradient(to right, #0f172a, #020617);
       font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #0f172a;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
       text-align: center;
-      padding: 50px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      margin-bottom: 15px;
     }
 
     h1 {
       color: #38bdf8;
+      margin-bottom: 10px;
     }
 
     h2 {
       color: #facc15;
+      margin-top: 25px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 16px;
     }
 
     button {
-      <h2>My Skills 🚀</h2>
-
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>Learning JavaScript</li>
-</ul>
-        background-color: #38bdf8;
+      background-color: #38bdf8;
       color: black;
       padding: 10px 20px;
       border: none;
       border-radius: 8px;
-      margin-top: 20px;
+      margin-top: 10px;
+      cursor: pointer;
     }
 
-    img {
-      border-radius: 50%;
-      width: 150px;
-      margin-bottom: 20px;
+    button:hover {
+      background-color: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #1e293b;
+      margin: 10px auto;
+      padding: 10px;
+      width: 200px;
+      border-radius: 6px;
+    }
+
+    .project {
+      background-color: #1e293b;
+      padding: 15px;
+      margin: 20px auto;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
-  
 </head>
 
 <body>
 
-<img src="IMG_1234.jpg">  <h1>Hello, I’m Godstime 👋</h1>
-  <p>I just started learning tech and this is my first website.</p>
+  <div class="container">
 
-  <h2>About Me</h2>
-  <p>I love learning new things and I’m becoming a developer 💻</p>
+    <img src="me.jpg" alt="My Photo">
 
-  <a href="https://instagram.com/oluwa_gt_poundz" target="_blank">
-    <button>Contact Me 📩</button>
+    <h1>Hello, I’m Godstime 👋</h1>
+    <p>I just started learning tech and this is my first website.</p>
+
+    <h2>About Me</h2>
+    <p>I love learning new things and I’m becoming a developer 💻</p>
+
+    <a href="https://instagram.com/yourusername" target="_blank">
+      <button>Contact Me 📩</button>
+    </a>
+
     <h2>My Skills 🚀</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Learning JavaScript</li>
+      <li>Problem Solving</li>
+    </ul>
 
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>Learning JavaScript</li>
-</ul>
-  </a>
-  <h2>My Projects 💻</h2>
+    <h2>My Projects 💻</h2>
 
-<div class="project">
-  <h3>My First Website</h3>
-  <p>This is the first website I built using HTML and CSS.</p>
-</div>
+    <div class="project">
+      <h3>My First Website</h3>
+      <p>This is the first website I built using HTML and CSS.</p>
+    </div>
+
+    <div class="project">
+      <h3>Coming Soon 🚀</h3>
+      <p>I’m currently learning and building more projects.</p>
+    </div>
+
+  </div>
 
 </body>
 </html>
